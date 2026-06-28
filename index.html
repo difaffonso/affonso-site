@@ -1043,7 +1043,7 @@ class Component extends DCLogic {
       fig.style.cssText="position:relative;flex:none;height:230px;width:306px;border-radius:16px;overflow:hidden;border:1px solid rgba(201,162,39,.18);background:#13151A";
       const img=document.createElement('img');
       img.onerror=function(){fig.remove();};
-      img.src='fotos/'+id+'.jpeg'; img.loading='lazy'; img.alt='Paciente da clínica Dr. Diego Affonso';
+      img.src=''+id+'.jpeg'; img.loading='lazy'; img.alt='Paciente da clínica Dr. Diego Affonso';
       img.style.cssText="width:100%;height:100%;object-fit:cover;display:block";
       fig.appendChild(img);
       const ov=document.createElement('div');
@@ -1103,7 +1103,7 @@ class Component extends DCLogic {
         a.href='https://instagram.com/dr.diego.affonso'; a.target='_blank'; a.rel='noopener';
         a.className='reveal ig-tile';
         a.style.cssText="position:relative;aspect-ratio:1;border-radius:16px;overflow:hidden;border:1px solid rgba(201,162,39,.16);background:#13151A;transition:transform .4s cubic-bezier(.22,.61,.36,1),border-color .4s;cursor:pointer;display:block";
-        a.innerHTML='<img src="fotos/'+id+'.jpeg" onerror="this.closest(\'a\').remove()" loading="lazy" alt="Foto do dia a dia da clínica" style="width:100%;height:100%;object-fit:cover;display:block"/><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,12,15,.45));opacity:0;transition:opacity .3s" class="ig-ov"><svg viewBox="0 0 24 24" fill="#fff" style="width:26px;height:26px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.7 3.7 0 0 1-1.4-.9 3.7 3.7 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 4.6a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 8.6a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8zm6.4-8.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></div>';
+        a.innerHTML='<img src="'+id+'.jpeg" onerror="this.closest(\'a\').remove()" loading="lazy" alt="Foto do dia a dia da clínica" style="width:100%;height:100%;object-fit:cover;display:block"/><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,12,15,.45));opacity:0;transition:opacity .3s" class="ig-ov"><svg viewBox="0 0 24 24" fill="#fff" style="width:26px;height:26px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.7 3.7 0 0 1-1.4-.9 3.7 3.7 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 4.6a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 8.6a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8zm6.4-8.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></div>';
         gal.appendChild(a);
       });
       this._wire();
